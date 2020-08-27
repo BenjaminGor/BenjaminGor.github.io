@@ -1,0 +1,16 @@
+---
+layout: default
+title: Earth Science Study Center - About the Creators
+---
+<h1 style="color: green;">
+    About the Creators 有關站主們
+</h1>
+<ul>
+    {% for creator in site.creators %}
+    <li>
+        <h2>{{ creator.name }}</h2>
+        <h3>{{ creator.position }}</h3>
+        {{ creator.content }}
+    </li>
+    {% endfor %}
+</ul>
