@@ -59,4 +59,4 @@ collections:
 collections:
   categorypages:
     output: true
-    permalink: /:categoryname
+    permalink: /:categories
