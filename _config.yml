@@ -49,4 +49,6 @@ plugins:
 #   - vendor/ruby/
 
 collections:
-  creators:
+  posts:
+    output: true
+    permalink: /:categories/:title
