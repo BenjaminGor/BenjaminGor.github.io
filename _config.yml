@@ -49,14 +49,10 @@ plugins:
 #   - vendor/ruby/
 
 collections:
-  creators:
-
-collections:
   posts:
     output: true
     permalink: /:categories/:title
-
-collections:
   categorypages:
     output: true
     permalink: /:categories
+  creators:
