@@ -52,3 +52,8 @@ collections:
   posts:
     output: true
     permalink: /:categories/:title
+
+collections:
+  categories:
+    output: true
+    permalink: /:categories
