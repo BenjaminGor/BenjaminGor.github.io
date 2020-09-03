@@ -22,7 +22,6 @@ title: Earth Science Study Center
 description: >- # this means to ignore newlines until "baseurl:"
   A group dedicated to enhance the experience of studying Earth System Science.
 github_username: BenjaminGor
-permalink: /:categories/:title/
 
 # Build settings
 theme: jekyll-theme-cayman
