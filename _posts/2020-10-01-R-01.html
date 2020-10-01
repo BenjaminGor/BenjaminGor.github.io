@@ -1,0 +1,62 @@
+---
+layout: post
+title: R Programming - Part 1 - Basic Operations
+date: 2020-10-01 17:30:00 +0800
+creator: Benjamin Loi
+categories: Programming
+excerpt_separator: <!--more-->
+---
+
+<h2>
+    Introduction
+</h2>
+
+<p>
+    This article will describe the commonly used object types in R, and their respective operations.
+</p>
+<!--more-->
+
+<h2>
+    Variables, Objects and Assignment
+</h2>
+
+<p>
+    In R, we deal with different objects, like numbers, vectors and matrices. 
+    Making reference to such objects required assigning them to a variable that can be manipulated later.
+    To do so, we will use the assignment operator <code> <- </code> 
+    where the left hand side is the variable name and the right hand side is the object.
+    The figure below demonstrates the assignment and printing of a number. 
+</p>
+<img src="../assets/images/R-01-00.png" alt="R-01-00">
+<img src="../assets/images/R-01-01.png" alt="R-01-01">
+
+<h2>
+    Basic Mathematical Operations
+</h2>
+
+<p>
+    Basic mathematical operations, like addition, subtraction, multiplication, and division,
+    can be done by <code> + </code>, <code> - </code>, <code> * </code>, <code> / </code>, 
+    between numbers or variables. Exponentiation can be done by <code> ** </code>, or
+    in the format of scientific notation <code> e+ </code> and <code> e- </code>.
+    The results of mathematical operations can also be assigned to a variable.
+    The example below shows the results of mathmetical operations on some numbers.
+</p>
+<img src="../assets/images/R-01-02.png" alt="R-01-02">
+<img src="../assets/images/R-01-03.png" alt="R-01-03">
+
+<h2>
+    Vectors and Related Operations
+</h2>
+
+<p>
+    We also have objects representing vectors and matrices in R.
+    To create a vector, use <code> c() </code> with the entries as input, where c stands for column.
+    A convenient way to create a sequence of numbers within a range is to use <code> : </code>,
+    with a step of 1. This is useful in constructing a vector.
+    Mathematical operators acting between two vectors are element-wise, applied each pair by each pair. 
+    Meanwhile mathmatical operations between a vector and a single number will have the effect of
+    applying the operator on all entries in that vector against the scalar.
+    Those behaviors are demonstrated below.
+</p>
+<img src="../assets/images/R-01-04.png" alt="R-01-04">
