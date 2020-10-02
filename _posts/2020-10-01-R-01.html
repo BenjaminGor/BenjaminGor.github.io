@@ -23,13 +23,13 @@ excerpt_separator: <!--more-->
 <p>
     In R, we deal with different objects, like numbers, vectors and matrices. 
     Making reference to such objects required assigning them to a variable that can be manipulated later.
-    To do so, we will use the assignment operator <code> <- </code> 
+    To do so, we will use the assignment operator <code><-</code> 
     where the left hand side is the variable name and the right hand side is the object.
     The figure below demonstrates the assignment and printing of a number. 
 </p>
-<img src="../assets/images/R-01-00.png" alt="R-01-00">
+<img src="../assets/images/R/R-01-00.png" alt="R-01-00">
 <br>
-<img src="../assets/images/R-01-01.png" alt="R-01-01">
+<img src="../assets/images/R/R-01-01.png" alt="R-01-01">
 
 <h2>
     Basic Mathematical Operations
@@ -43,9 +43,9 @@ excerpt_separator: <!--more-->
     The results of mathematical operations can also be assigned to a variable.
     The example below shows the results of mathmetical operations on some numbers.
 </p>
-<img src="../assets/images/R-01-02.png" alt="R-01-02">
+<img src="../assets/images/R/R-01-02.png" alt="R-01-02">
 <br>
-<img src="../assets/images/R-01-03.png" alt="R-01-03">
+<img src="../assets/images/R/R-01-03.png" alt="R-01-03">
 
 <h2>
     Vectors and Related Operations
@@ -61,4 +61,20 @@ excerpt_separator: <!--more-->
     applying the operator on all entries in that vector against the scalar.
     Those behaviors are demonstrated below.
 </p>
-<img src="../assets/images/R-01-04.png" alt="R-01-04">
+<img src="../assets/images/R/R-01-04.png" alt="R-01-04">
+
+<h2>
+    Vector Slicing
+</h2>
+
+<p>
+    We can select parts of a vector by slicing notation, by specifying the desired index in a bracket <code>[]</code>
+    following the vector name. The index can be supplied in the form of a sequence of number, either generated
+    from <code>:</code> as mentioned in the last paragraph, or another vector. An example usage is shown below.
+    The extracted subset can be used in further calculation as long as the extents of the dimensions agree.
+</p>
+<img src="../assets/images/R/R-01-05.png" alt="R-01-05">
+
+<p>
+    Last Update: 2020-10-02
+</p>
