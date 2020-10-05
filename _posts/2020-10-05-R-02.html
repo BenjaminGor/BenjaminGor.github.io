@@ -1,0 +1,119 @@
+---
+layout: post
+title: R Programming - Part 2 - Functions
+date: 2020-10-05 16:30:00 +0800
+creator: Benjamin Loi
+categories: Programming
+excerpt_separator: <!--more-->
+---
+
+<h2>
+    Introduction
+</h2>
+
+<p>
+    This article will describe the principles and usage of functions in R.
+</p>
+<!--more-->
+
+<h2>
+    Input and Output of Functions
+</h2>
+
+<p>
+    Functions always take some inputs and return outputs.
+    We have already encountered some functions like <code>print()</code> displaying the output on the screen.
+    Inputs, also known as arguments, are supplied inside the parenthesis after the function name.
+    Outputs can be printed, or assigned to some variables.
+    It is possible to have multiple inputs and outputs.
+    In case of multiple input, they are separated by a comma.
+    We show an example of the function <code>sum()</code> which computes the sum of entries of all arguments provided.
+</p>
+<img src="../assets/images/R/R-02-00.png" alt="R-02-00">
+
+<p>
+    Information about a function can be seen when the function name is being typed.
+    An auto-completion box will appear, hovering the mouse on the function name 
+    allows the user to take a look at a short explanation of the function.
+    Full documentation can be found by applying <code>help()</code>.
+</p>
+<img src="../assets/images/R/R-02-01.png" alt="R-02-01">
+<br>
+<img src="../assets/images/R/R-02-02.png" alt="R-02-02">
+
+<h2>
+    Commonly Used Functions
+</h2>
+
+<p>
+    Some commonly used functions are summarized in the table below.
+</p>
+<table>
+    <tr>
+        <th>Functions</th>
+        <th>Usage</th>
+    </tr>
+    <tr>
+        <td><code>sum()</code></td>
+        <td>Explained in the paragraph Above.</td>
+    </tr>
+    <tr>
+        <td><code>mean()</code></td>
+        <td>
+            Evaluates the mean of all elements in a vector.
+            Example: <code>mean(c(1,2,3))</code> gives 2.
+        </td>
+    </tr>
+    <tr>
+        <td><code>median(), var()</code></td>
+        <td>
+            Calculate the median and variance of all elements in a vector.
+            Similar to <code>mean()</code> above.
+        </td>
+    </tr>
+    <tr>
+        <td><code>min(), max()</code></td>
+        <td>
+            Find the minimum and maximum of all entries supplied.
+            Example: <code>min(c(1,2,3))</code> gives 1.
+        </td>
+    </tr>
+</table>
+
+<h2>
+    Named Arguments
+</h2>
+
+<p>
+    To improve clarity, when we are calling a function, 
+    the names of the arguments can be explicitly written out if they are defined in the function.
+    It is in the form of [argument name] = [argument value]. 
+    Named arguments are often found as optional arguments.
+    When such arguemnts are provided, they override the default values.
+    An example of <code>paste()</code> is shown below 
+    which combines strings with a separator specified in the named argument <code>sep=</code>.
+</p>
+<img src="../assets/images/R/R-02-03.png" alt="R-02-03">
+
+<h2>
+    Sequences and Matrice
+</h2>
+
+<p>
+    We can create a sequence, apart from <code>:</code>, by using the function <code>seq()</code>,
+    where the lower limit and upper limit are supplied first, and then
+    the step size can be specified by the named arguments <code>by=</code>.
+    Notice that the end point is always included.
+</p>
+<img src="../assets/images/R/R-02-04.png" alt="R-02-04">
+<p>
+    The vector sequence can be reshaped into a matrix through the function <code>matrix()</code>.
+    The output shape has to be specified in the named arguments <code>nrow=</code> and <code>ncol=</code>.
+    By default the elements are arranged along columns.
+</p>
+<img src="../assets/images/R/R-02-05.png" alt="R-02-05">
+<p>
+    Inner product of vectors and matrices can be carried out by the operator <code>%*%</code>,
+    as demonstrated in the example below.
+</p>
+<img src="../assets/images/R/R-02-06.png" alt="R-02-06">
