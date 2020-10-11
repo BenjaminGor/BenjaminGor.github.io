@@ -39,6 +39,8 @@ excerpt: "This article will describe the commonly used object types in R, and th
     can be done by <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, 
     between numbers or variables. Exponentiation can be done by <code>**</code>, or
     in the format of scientific notation <code>e+</code> and <code>e-</code>, which means ten to the power of n.
+    The order of evaluation follows the common mathmatical usage, and brackets, 
+    having the highest priority, can be added to the expression.
     The results of mathematical operations can also be assigned to a variable.
     The example below shows the results of mathmetical operations on some numbers.
 </p>
@@ -58,6 +60,7 @@ excerpt: "This article will describe the commonly used object types in R, and th
     Mathematical operators acting between two vectors are element-wise, applied each pair by each pair. 
     Meanwhile mathmatical operations between a vector and a single number will have the effect of
     applying the operator on all entries in that vector against the scalar.
+    They are collectively called as whole array operations.
     Those behaviors are demonstrated below.
 </p>
 <img src="../assets/images/R/R-01-04.png" alt="R-01-04">

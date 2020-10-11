@@ -1,0 +1,81 @@
+---
+layout: post
+title: R Programming - Part 3 - If-then-else Statement
+date: 2020-10-12 00:30:00 +0800
+creator: Benjamin Loi
+categories: Programming
+excerpt: "This article will describe the principles and usage of functions in R."
+---
+
+<h2>
+    Introduction
+</h2>
+
+<p>
+    This article will explain one of the most used programming structure, the if-then-else statement, 
+    and how it is written in R.
+</p>
+
+<h2>
+    Boolean Values and Comparison
+</h2>
+
+<p>
+    Often in the world of programming, we want to carry out some tests.
+    Then based on the results of the tests, we perform corresponding actions, like calculation and assignment.
+    Before talking about how to selectively execute certain actions after checks,
+    we first need to know about the checks themselves, and the boolean values incurred.
+    Boolean values can be regarded as true false values (<code>TRUE</code>, <code>FALSE</code>) usually obtained from comparison,
+    including less than, greater than, equal to. In R they correspond to the operators
+    <code><</code> (<code><=</code>), <code>></code> (<code>>=</code>) and <code>==</code>.
+    The outputs of some comparisons are shown in the figure below.
+</p>
+<img src="../assets/images/R/R-03-00.png" alt="R-03-00">
+
+<h2>
+    Multiple Conditions
+</h2>
+
+<p>
+    Sometimes a composite test may be needed in which two or more conditions are considered.
+    To construct such a test, we will make use of two operators, <code>||</code> (or), <code>&&<code> (and).
+    <code>&&</code> has a higher precedence than <code>||</code> and hence leads to the following outputs.   
+</p>
+<img src="../assets/images/R/R-03-01.png" alt="R-03-01">
+
+<h2>
+    If-then-else Statement
+</h2>
+
+<p>
+    Now we are able to formulate a test through comparison, and use it to selectively execute
+    a particular part of the code. This is done by the if-then-else statement,
+    with <code>if</code>, <code>else</code> and curly brackets. 
+    Given the condition in the if statement is satisfied, or it is <code>TRUE</code>, 
+    then the block under the if statement will be executed. Otherwise, <code>FALSE</code>
+    will cause the block under the else statement to be run. A simple example is included below.
+</p>
+<img src="../assets/images/R/R-03-02.png" alt="R-03-02">
+<br>
+<img src="../assets/images/R/R-03-03.png" alt="R-03-03">
+
+<h2>
+    Else-if statement
+</h2>
+
+<p>
+    Contrary to <code>if</code> and <code>else</code> which can only appear once 
+    in a single if-then-else structure, the composite operator <code>else if</code>
+    can appear for an arbitrary amount of times in the same if-then-else structure.
+    It checks the condition if the previous testing by <code>if</code> or <code>else if</code> fails, 
+    and when the current checking passes, the block under this particular <code>else if</code> statement
+    is executed, and all the subsequent <code>else if</code> or <code>else</code> are ignored.
+    An extended version of the previous example is displayed below.
+</p>
+<img src="../assets/images/R/R-03-04.png" alt="R-03-04">
+
+<a href="2020-10-05-R-02.html">Previous: Part 2 - Functions</a>
+
+<p>
+    Last Update: 2020-10-12
+</p>
