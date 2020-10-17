@@ -1,0 +1,95 @@
+---
+layout: post
+title: R Programming - Part 4 - For Loop, While Loop
+date: 2020-10-17 23:30:00 +0800
+creator: Benjamin Loi
+categories: Programming
+excerpt: "This article will demonstrate another essential structure, for loop and while loop, 
+which can repeatedly execute parts of the code."
+---
+
+<h2>
+    Introduction
+</h2>
+
+<p>
+    This article will demonstrate another essential structure, for loop and while loop, 
+    which can repeatedly execute parts of the code. 
+</p>
+
+<h2>
+    For Loop
+</h2>
+
+<p>
+    For loop will iterate over the elements of a sequence and run the block under the for loop at each iteration.
+    At the start of each repetition, the next entry of the sequence will be assigned to a dummy loop variable,
+    that can be referenced in the lines enclosed by the loop. For loop stops when all elements have been gone through. 
+    To implement for loop, we simple write a statement with the form of <code>for ( in )</code> 
+    and use a pair of curly brackets to surround the block to be repeated.
+    A simple usage to print out consecutive numbers is shown below, with <code>i</code> as the loop variable.
+</p>
+<img src="../assets/images/R/R-04-00.png" alt="R-04-00">
+
+<p>
+    A more complicated example is to sum the entries in a series, 
+    although you can simply use the function <code>sum()</code> instead.
+</p>
+<img src="../assets/images/R/R-04-01.png" alt="R-04-01">
+<br>
+<img src="../assets/images/R/R-04-02.png" alt="R-04-02">
+
+<h2>
+    Multiple For Loops
+</h2>
+
+<p>
+    Nested for loops can be utilized to deal with more complicated situations.
+    They behave in a way that the innermost loop is iterated the fastest.
+    It is even possible for the range of an inner loop to depend on an outer loop.
+    When the inner loop finishes all the iteration, the outer loop immediately around it
+    will run once, and then the inner loop is restarted. Two slightly different cases are shown below. 
+</p>
+<img src="../assets/images/R/R-04-03.png" alt="R-04-03">
+<br>
+<img src="../assets/images/R/R-04-04.png" alt="R-04-04">
+<br>
+<img src="../assets/images/R/R-04-05.png" alt="R-04-05">
+<br>
+<img src="../assets/images/R/R-04-06.png" alt="R-04-06">
+
+<h2>
+    While Loop
+</h2>
+
+<p>
+    While loop is another kind of loops which will keep repeating the code, given the condition
+    stated in the loop statement is true. The statement has the form of <code>while ()</code>.
+    Extra care is needed to avoid that the test condition always returns true, otherwise,
+    it will become an infinite loop and the code will never stop.
+    A brief example is given below.
+</p>
+<img src="../assets/images/R/R-04-07.png" alt="R-04-07">
+<br>
+<img src="../assets/images/R/R-04-08.png" alt="R-04-08">
+
+<h2>
+    Combined usage of Loop and If-then-else statement
+</h2>
+
+<p>
+    Loops and If-then-else statements can be manipulated together to allow more flexibility and control.
+    Often we also use the command <code>break</code> to interrupt when it is appropriate.
+    An example is presented below.
+</p>
+<img src="../assets/images/R/R-04-09.png" alt="R-04-09">
+<br>
+<img src="../assets/images/R/R-04-10.png" alt="R-04-10">
+
+<p>
+    <a href="R-03.html">Previous: Part 3 - If-then-else Statement</a>
+</p>
+
+<p>
+    Last Update: 2020-10-17
+</p>
